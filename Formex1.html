@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormEX1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container mt-3">
+        <form>
+            <div class="form-row">
+            <div class="input-group col-6">
+                <span class="input-group-text ">@</span>
+                <input type="text" name="un" id="usn" placeholder="city" class="form-control">
+            </div>
+            <div class="input-group col-4">
+                <input type="text" name="em" id="em" placeholder="State" class="form-control">
+            </div>
+           
+            <div class="input=group col-2">
+                <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">Choose</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">1</a></li>
+                    <li><a href="#" class="dropdown-item">2</a></li>
+                    <li><a href="#" class="dropdown-item">3</a></li>
+                </ul>
+            </div>
+           </div>
+
+       <!--horizontal Row-->
+        <div class="form-group row mt-3">
+            <label for="email" class="col-sm col-form-label">Email:</label>
+            <div class="col-sm-10">
+              <input class="form-control" id="email">
+            </div></div>
+
+            <div class="form-group row mt-3">
+                <label for="pswd" class="col-sm col-form-label">Password:</label>
+                <div class="col-sm-10">
+                    <input type="password" name="pwd" id="pswd" class="form-control">
+                </div>
+            </div>
+   
+        <!--CheckBoxes-->
+        <div class="form-group row mt-3">
+            <label for="pswd" class="col-sm col-form-label">Radios:</label>
+
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input type="radio" name="option" id="rb1" class="form-check-input" checked>
+                    <label class="form-check-label" for="cb1">First Radio</label>
+                    
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="option" id="rb2" class="form-check-input">
+                    <label class="form-check-label" for="cb1">Second Radio</label>
+                    
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="option" id="rb3" class="form-check-input" disabled>
+                    <label class="form-check-label" for="cb1" >Third disabled radio</label>
+                </div>
+                <br>
+
+                <div class="form-check">
+                    <input type="checkbox" name="option" id="rb3" class="form-check-input">
+                    <label class="form-check-label" for="cb1" >Example CheckBox</label>
+                </div>
+
+            </div>
+        </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+  
+
+          </form>
+    </div>
+</body>
+</html>
